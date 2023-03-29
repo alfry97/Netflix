@@ -1,0 +1,421 @@
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+body{
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.container{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0px 3%;
+}
+li{
+    list-style: none;
+}
+h1{
+    font-size: 50px;
+    font-weight: 700px;
+    margin-bottom: 16px;
+}
+h2{
+    font-size: 30px;
+    font-weight: 400px;
+    margin-bottom: 40px;
+}
+h3{
+    font-size: 24px;
+    font-weight: 300px;
+    margin-bottom: 20px;
+}
+.header{
+        height: 85vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.8)
+        ),url("https://assets.nflxext.com/ffe/siteui/vlv3/8f12b4f0-a894-4d5b-9c36-5ba391c63fbe/44355e66-dbf8-4dd8-ba6b-8e9e32ec6abd/IN-en-20230320-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: center;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.logo{
+    margin-left: -500px;
+}
+.logo svg{
+   height: 60px;
+
+}
+.select-box{
+    position: relative;
+    
+}
+.select-box svg{
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+   
+}
+select{
+    display: inline-block;
+    cursor:pointer;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 6px 0px 6px 20px;
+    border-radius: 3px;
+}
+select option{
+    color: black;
+}
+.signin-btn{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+    background-color: #e50914;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    margin-left: 20px;
+}
+.signin-btn:hover{
+    background-color: #b80f17;
+    transition-timing-function: cubic-bezier(0.5,0,0.1,1);
+}
+.header-content{
+    height: 65vh;
+    display:grid;
+    place-content: center;
+    text-align: center;
+}
+.form-field{
+    text-align: center;
+}
+.form{
+    width:80%;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 60px;
+}
+.form-group{
+    width:60%;
+    height: 60px;
+    position:relative
+}
+.form-input{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    color: #ffffff;
+    background: transparent; 
+
+   
+    border-style: solid;
+    
+    border-radius: 5px;
+    padding: 20px 15px;
+    appearance: none;
+}
+
+.form-label{
+    margin-top: 430px;
+    margin-left: 417px;
+    position: absolute;
+    top:0;
+    left:0;
+    font-size: 15px;
+    padding: 20px 15px;
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+
+}
+.form-input:focus + .form-label {
+    top:-15px;
+    left: 0px;
+    font-size: 12px;
+    z-index: 10;
+}
+.form-input:not(:placeholder-shown).form-input:not(:focus)+ .form-label{
+    top: -15px;
+    left: 0;
+    font-size: 12px;
+    z-index: 10;
+}
+.get-btn{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 15px 25px;
+    background: #e50914;
+    border-radius: 3px;
+    color: #ffffff;
+    border:0;
+}
+.get-btn:hover{
+    background-color: #b80f17;
+    transition-timing-function: cubic-bezier(0.5,0,0.1,1);
+}
+section{
+    padding: 80px 0px;
+    border-top: 8px solid #292626;
+}
+.section-wrap{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.section-content{
+    flex-basis: 50%;
+}
+.section-media{
+    flex-basis: 50%;
+    position: relative;
+}
+.section-media img{
+    width:100%;
+}
+.video-div {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-1{
+    max-width: 73%;
+    max-height: 54%;
+    top: 48%;
+    left: 50%;
+}
+.video-2 {
+    max-width: 62%;
+    max-height: 54%;
+    top: 34%;
+    left: 50%;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+.overlay-box{
+    position: relative;
+    left: 27.5%;
+    bottom: 150px;
+    transform: translate(-50%);
+
+    width: 55%;
+    min-width: 240px;
+    margin: 0 auto;
+    padding: 8px 12px;
+    background-color: black;
+
+    display: flex;
+    align-items:center;
+    border:2px solid rgba(225,225,225,0.2);
+    box-shadow: 0 0 32px 0  black;
+    border-radius: 12px;
+    overflow: hidden;
+    z-index:1;
+}
+.overlay-box-img{
+    margin:0 16px 0 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    
+}
+.overlay-box-img img{
+    height: 80px;
+}
+
+.overlay-box-test p{
+    font-size: 14px;
+    color:blue;
+}
+.download-animation{
+    width:48px;
+    height: 48px;
+    outline: 2px solid black;
+    outline-offset: -2px;
+    display: block;
+    content: "";
+    background: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif") center center no-repeat;
+    background-size: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.overlay-box-test{
+    text-align: left;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 5px 0;
+}
+.section-faq{
+    text-align: center;
+}
+.accordion{
+    width: 100%;
+    font-size:24px ;
+    margin: 40px 0;
+    text-align: left;
+}
+.question{
+    position: relative;
+    background-color: #211e1e;
+    margin-bottom: 10px;
+}
+.question label:hover {
+    background-color: #444;
+}
+.question svg {
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    right: 30px;
+    top: 20px;
+    transform: rotate(45deg);
+    transition: all 0.2s ease;
+}
+.question .title{
+     display: block;
+     padding: 24px 30px;
+     border-bottom: 1px solid #000;
+     cursor: pointer;
+}
+.question .answer{
+    padding: 0px 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+.question .answer p{
+    margin-bottom: 20px;
+}
+.question input[type="checkbox"]{
+    display:none;
+}
+.question input[type="checkbox"]:checked~ .answer{
+    max-height: 600px;
+    padding: 24px 30px;
+}
+.question input[type="checkbox"]:checked~ .title svg{
+    transform: rotate(180deg);
+}
+.form-group2{
+    width:45%;
+    height: 60px;
+    position:relative;
+    
+    
+}
+.form-input2{
+    width: 60%;
+    height: 100%;
+    font-size: 15px;
+    color: #ffffff;
+    background: transparent; 
+
+   
+    border-style: solid;
+    
+    border-radius: 5px;
+    padding: 20px 15px;
+    appearance: none;
+}
+
+.form-label2{
+    margin-top: 430px;
+    margin-left: 417px;
+    position: absolute;
+    top:0;
+    left:0;
+    font-size: 15px;
+    padding: 20px 15px;
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+
+}
+.form-input2:focus + .form-label2 {
+    top:-15px;
+    left: 0px;
+    font-size: 12px;
+    z-index: 10;
+}
+.form-input2:not(:placeholder-shown).form-input2:not(:focus)+ .form-label2{
+    top: -15px;
+    left: 0;
+    font-size: 12px;
+    z-index: 10;
+}
+.get-btn2{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 15px 25px;
+    background: #e50914;
+    border-radius: 3px;
+    color: #ffffff;
+    border:0;
+}
+.get-btn2:hover{
+    background-color: #b80f17;
+    transition-timing-function: cubic-bezier(0.5,0,0.1,1);
+}
+.form-field2{
+    text-align: center;
+}
+.form2{
+    width:80%;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 60px;
+}
+.footer {
+    padding: 80px 0px;
+}
+.footer a {
+    font-size: 16px;
+    color: rgba(255,255,255,0.7);
+}
+.footer .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 0;
+}
+
+
+
+.footer .grid-container li a {
+    display: block;
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 15px;
+}
